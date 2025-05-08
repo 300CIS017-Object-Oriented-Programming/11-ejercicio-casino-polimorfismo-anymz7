@@ -16,7 +16,6 @@ float Slots::jugar(float gonzosApostar) {
     return gonzosResultado;
 }
 
-
 float Slots::calcularResultado(float gonzosApostar) {
     float maxResult = 2;
     float lowestResult = 1.5;
@@ -33,6 +32,13 @@ float Slots::calcularResultado(float gonzosApostar) {
     }
 }
 void Slots::mostrarReglas() const {
-    cout << "Reglas de Mayor13:" << endl;
-    cout << "El sistema genera un número aleatorio para el usuario entre 1 y 13. Ahí el usuario debe tener 2 opciones para continuar, la primera: darse por perdido antes de que se genere el número que le corresponde a casino (en este caso perderá la mitad del dinero apostado). La segunda: jugar, es decir, que se genere el número aleatorio del casino." << endl;
+    cout << "Slots es un juego en el que una maquina escoge aleatoriamente 3 simbolos (en algunosmodelos son 5)" << endl;
+    cout << "Reglas de Slots:" << endl;
+    cout << "1. Si caen los 3 simbolos iguales o alguna combinacion especial el jugador ganara cierta cantidad, de lo contrario perdera lo apostado." << endl;
+    cout << "2. En esta version de Slots se generaran 3 numeros entre 1 y 7" << endl;
+    cout << "3. Si caen los 3 numeros iguales el jugador ganara el doble de lo apostado" << endl;
+    cout << "4. si consigue una escalera (numeros sucesivos sea ascendente o descendente) ganara la mitad de lo apostado" << endl;
+    cout << "5. Si llega a conseguir el triple 7 ganara 7 veces lo apostado" << endl;
+    cout << "6. Si no consigue ninguna perdera lo apostado." << endl;
+
 }
