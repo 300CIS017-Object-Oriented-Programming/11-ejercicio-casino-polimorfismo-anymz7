@@ -32,3 +32,7 @@ float Slots::calcularResultado(float gonzosApostar) {
         return 0;
     }
 }
+void Slots::mostrarReglas() const {
+    cout << "Reglas de Mayor13:" << endl;
+    cout << "El sistema genera un número aleatorio para el usuario entre 1 y 13. Ahí el usuario debe tener 2 opciones para continuar, la primera: darse por perdido antes de que se genere el número que le corresponde a casino (en este caso perderá la mitad del dinero apostado). La segunda: jugar, es decir, que se genere el número aleatorio del casino." << endl;
+}
