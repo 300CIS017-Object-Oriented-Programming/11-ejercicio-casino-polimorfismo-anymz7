@@ -37,6 +37,7 @@ void View::jugarView() {
         cout << "1. Mayor a 13." << endl;
         cout << "2. Dos colores." << endl;
         cout << "3. Slots" << endl;
+        cout << "4. Adivina" << endl;
         cout << "Opcion: ";
         cin >> idJuego;
 
@@ -53,6 +54,11 @@ void View::jugarView() {
             }
             case 3: {
                 Slots juego;
+                juego.mostrarReglas();
+                break;
+            }
+            case 4: {
+                Adivina juego;
                 juego.mostrarReglas();
                 break;
             }

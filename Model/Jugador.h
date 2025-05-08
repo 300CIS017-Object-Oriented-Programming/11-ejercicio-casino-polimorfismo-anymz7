@@ -14,6 +14,8 @@ using std::endl;
 using std::string;
 
 class Jugador {
+
+
 private: //atributos
     string nombre;
     long id{};

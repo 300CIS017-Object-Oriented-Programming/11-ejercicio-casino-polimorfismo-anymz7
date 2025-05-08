@@ -19,14 +19,13 @@ public:
     Juego() = default;
 
 
+
     //AQUÍ SE EVIDENCIA QUE ES UNA CLASE ABSTRACTA
     virtual float jugar(float gonzosApostar) = 0;
 
-    //AQUÍ SE EVIDENCIA MOSTRAR REGLAS
     virtual void mostrarReglas() const = 0;
 
     virtual ~Juego() = default;
-
 
 };
 
