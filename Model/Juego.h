@@ -12,15 +12,20 @@ protected:
     int numeroCasino;
     int numeroJugador;
 
+    //AQUÍ SE EVIDENCIA QUE ES UNA CLASE ABSTRACTA
     virtual float calcularResultado(float gonzosApostar) = 0;
 
 public:
     Juego() = default;
 
-    virtual ~Juego() = default;
 
+
+    //AQUÍ SE EVIDENCIA QUE ES UNA CLASE ABSTRACTA
     virtual float jugar(float gonzosApostar) = 0;
 
+    virtual void mostrarReglas() const = 0;
+
+    virtual ~Juego() = default;
 
 };
 

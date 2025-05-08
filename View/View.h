@@ -26,9 +26,12 @@ private:
 
     void recargarGonzos();
 
+
+
 public:
     View() = default; // Escribe un constructor por defecto
     void verPrincipal();
+
 };
 
 #endif //CASINO_VIEW_H

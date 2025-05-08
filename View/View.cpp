@@ -37,8 +37,37 @@ void View::jugarView() {
         cout << "1. Mayor a 13." << endl;
         cout << "2. Dos colores." << endl;
         cout << "3. Slots" << endl;
+        cout << "4. Adivina" << endl;
         cout << "Opcion: ";
         cin >> idJuego;
+
+        switch (idJuego) {
+            case 1: {
+                Mayor13 juego;
+                juego.mostrarReglas();
+                break;
+            }
+            case 2: {
+                DosColores juego;
+                juego.mostrarReglas();
+                break;
+            }
+            case 3: {
+                Slots juego;
+                juego.mostrarReglas();
+                break;
+            }
+            case 4: {
+                Adivina juego;
+                juego.mostrarReglas();
+                break;
+            }
+                    break;
+            default:
+                cout << "Opcion no valida. Volviendo al menú..." << endl;
+            return;
+        }
+
         std::string textoResultado;
         gonzosResultado = casino.jugar(idJuego, idJugador, cantGonzos);
         if (gonzosResultado > 0) {
@@ -136,3 +165,5 @@ void View::recargarGonzos() {
         cout << ex.what();
     }
 }
+
+

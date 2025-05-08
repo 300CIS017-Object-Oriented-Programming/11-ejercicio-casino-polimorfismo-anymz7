@@ -18,6 +18,8 @@ Casino::Casino() {
     juegosDisponibles.push_back(juego2);
     auto *slots = new Slots();
     juegosDisponibles.push_back(slots);
+    auto *adivina = new Adivina();
+    juegosDisponibles.push_back(adivina);
 }
 
 void Casino::agregarJugador() {
